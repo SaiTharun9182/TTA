@@ -1,0 +1,31 @@
+.search-widget {
+    max-width: var(--max-width);
+    display: flex;
+    height: 3.5rem;
+    border-radius: 8px;
+}
+.exchange-icon {
+	position: relative;
+	display: inline-flex;
+	padding-top: 5;
+    padding-right:  25px;
+    padding-left:  25px;
+}
+.search-btn {
+    margin-left: 10;
+    margin-right: -20;
+    margin-top: 0px;
+    padding: 1.5rem 1rem 1rem 1rem;
+    background: blue;
+    color: white;
+    font-weight: 700;
+    border: 1px solid blue;
+    font-size: .975rem;
+    line-height: 1.25rem;
+    width: 290px;
+    letter-spacing: .1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 8px 0px 0px 8px;
+}
+

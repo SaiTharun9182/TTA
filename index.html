@@ -1,0 +1,181 @@
+<html>
+
+<head>
+    <title>Railway TIcket Availability</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+<style>
+
+#links{
+height: 80px;
+ list-style: none;
+    display: flex;
+    margin-top: -20;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    margin-right: 500px;
+  }
+.menu li a{
+    height: 40px;
+    line-height: 43px;
+    margin: 10px;
+    margin-right:20px;
+    padding: 0px 10px 0px 30px;
+    display: flex;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: gray;
+
+}
+.menu li a:hover {
+    background-color: #23cdaf;
+    color: white;
+    box-shadow: 5px 10px 30px rgba(24, 139, 119, 0.2); 
+  }
+.menu li {
+float:left;
+width:150px;
+list-style:none;
+}
+a {
+    text-decoration: none; 
+  }
+.login{
+    color: orange;
+    width: 200px;
+    height: 40px;
+    line-height: 43px;
+    margin: 25px;
+    margin-right: 120px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: flex;
+    
+}
+.login a:hover {
+    background-color: blue;
+    color: white;
+    box-shadow: 5px 10px 30px rgba(24, 139, 119, 0.2); 
+  }
+  
+  
+/*#body{
+background: url("vande_bharat_saffron.jpg");
+background-repeat:no-repeat;
+background-size:cover;
+}*/
+.container {
+  position: relative;
+}
+form{
+     position: absolute;
+  bottom: 400px;
+  right: 50px;
+  background-color: white;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+     
+}
+#src{
+    height: 30px;
+    margin-top: 15px
+}
+#dst{
+    height: 30px;
+    margin-top: 15px;
+}
+.search-label{
+    padding: 20px;
+}
+.train-icon{
+    margin-top: 15px;
+}
+.home_date_wrap{
+    margin-left: 10px;
+}
+.marqu{
+         height: 25px;  
+        }
+        h6{
+            display: inline;
+            font-size: 20px;
+            font-family: serif;
+            color: transparent;
+            text-align: center;
+            animation: effect 2s linear infinite;
+        }
+        @keyframes effect {
+            0% {
+                background: linear-gradient(#15ff00, #ff0000);
+                -webkit-background-clip: text;
+            }
+ 
+            100% {
+                background: linear-gradient(#5e0879, #3CE7D7);
+                -webkit-background-clip: text;
+            }
+        }
+</style>
+
+</head>
+<body>
+<div id="links">
+<ul class="menu">
+<li><a href="index.html">HOME</a></li>
+<li><a href="admin.html"> ADMIN</a></li>
+<li><a href="contact.html">CONTACT</a></li>
+<li><a href="signup.html">Signup</a></li>
+</ul>
+<span class="menu-space"></span>
+<div class="login"><a href="login.html">Login</a></div>
+</div>
+<div>
+<marquee class="marqu" color="yellow" direction="right"  style="border: dashed;"><h6>Train Ticket Availability</h6></marquee>
+</div>
+<br>
+<div id="body">
+<center> 
+    <div class="content">
+        <img src="vande_bharat_saffron.jpg" width="1300" height="700">
+    <form>
+    
+        <div style="display: inline-flex;">
+        <span class="train-icon">
+            <img src="https://www.redbus.in/railways/public/images/train_src.svg" alt="train from">
+        </span>
+        <label for="src" class=" search-label">FROM STATION</label>
+        <input type="text" id="src" autocomplete="off" class="search-input" value="" >
+        <CENTER><span class="exchange-icon"><img src="https://www.redbus.in/railways/public/images/exchange_station.svg" alt="exchange icon"></span></CENTER>
+        <span class="train-icon"><img src="https://www.redbus.in/railways/public/images/train_dest.svg" alt="train from"></span>
+        <label for="dst" class="search-label">TO STATION</label>
+        <input type="text" id="dst" autocomplete="off" class="search-input" value="">
+        </div>
+    
+    <div class="home_date_wrap" tabindex="0" style="display: inline-flex ">
+        <div class="home_calendar">
+            <img alt="calendar_icon"  class="train-icon" src="https://www.redbus.in/railways/public/images/calendar_icon.svg" type="date">
+            <div class="date-text" style="display: inline-flex;">
+               
+                <input type="date" id="date" name="date" style="padding-top: 5px;">
+            </div>
+        </div>
+    </div>
+    <button class="search-btn " >SEARCH TRAINS</button>
+</div>
+</form>
+
+</div>
+
+<!--<div id="footer">
+<h5>Designed by MCA Final year B-Sec Students</h5>
+</div>
+style="display: inline-flex; margin-bottom: 10px"-->
+
+</body>
+</html>
